@@ -12,7 +12,7 @@ public class TestClass {
         employee1.LastName = "Pupkin";
         employee1.Age = 21;
         employee1.Department = "Development";
-        System.out.println("My name is " + employee1.FirstName + employee1.LastName + ". I'm " + employee1.Age + "years old. I'm working in " + employee1.Department + " department");
+        System.out.println("My name is " + employee1.FirstName +" "+ employee1.LastName + ". I'm " + employee1.Age + " years old. I'm working in " + employee1.Department + " department");
         employee1.responsibilities("Coding");
         System.out.println();
 
@@ -22,7 +22,7 @@ public class TestClass {
         employee2.Age = 23;
         employee2.Department = "Testing";
 
-        System.out.println("My name is " + employee2.FirstName + employee2.LastName + ". I'm " + employee2.Age + "years old. I'm working in " + employee2.Department + " department");
+        System.out.println("My name is " + employee2.FirstName+ " " + employee2.LastName + ". I'm " + employee2.Age + " years old. I'm working in " + employee2.Department + " department");
         employee2.responsibilities("Test-automation");
         System.out.println();
 
@@ -31,24 +31,27 @@ public class TestClass {
         manager1.Age=28;
         manager1.Department="Development";
 
-        System.out.println("My name is " + manager1.FirstName + manager1.LastName + ". I'm " + manager1.Age + "years old. I'm working in " + manager1.Department + " department");
-        employee2.responsibilities("Move hands");
+        System.out.println("My name is " + manager1.FirstName + " " + manager1.LastName + ". I'm " + manager1.Age + " years old. I'm working in " + manager1.Department + " department");
+        manager1.responsibilities("Move hands");
+        manager1.manage("manage people");
         System.out.println();
 
         chief.FirstName="Oleg";
         chief.LastName="Iuzhniy";
         chief.Age=58;
 
-        System.out.println("My name is " + manager1.FirstName + manager1.LastName + ". I'm " + manager1.Age + "years old");
-        employee2.responsibilities("To sleep");
+        System.out.println("My name is " + chief.FirstName +" " + chief.LastName + ". I'm " + chief.Age + " years old");
+        chief.responsibilities("To sleep");
+        chief.hire("Developers, Testers, Secretaries and other people");
         System.out.println();
 
         secretary.FirstName="Kuzya";
         secretary.LastName="Travkin";
         secretary.Age=40;
 
-        System.out.println("My name is " + secretary.FirstName + secretary.LastName + ". I'm " + secretary.Age + "years old. ");
-        employee2.responsibilities("To drink tea");
+        System.out.println("My name is " + secretary.FirstName +" "+ secretary.LastName + ". I'm " + secretary.Age + " years old");
+        secretary.responsibilities("To drink tea");
+        secretary.completeForms("2NDFL");
         System.out.println();
     }
 }
